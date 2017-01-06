@@ -1,4 +1,4 @@
 export class Prize {
-  constructor(private id: number, private image: string) {
+  constructor(private id: number, private image: string, public message: string) {
   }
 }

@@ -1,12 +1,19 @@
 <div class="prizes-container">
     <div class="value-holder">
         <img class="prize-img" src="{{firstColumnPrize.image}}" />
-    </div>
-    <div class="value-holder">
+    </div><div class="value-holder">
         <img class="prize-img" src="{{secondColumnPrize.image}}" />
-    </div>
-    <div class="value-holder">
+    </div><div class="value-holder">
         <img class="prize-img" src="{{thirdColumnPrize.image}}" />
     </div>
 </div>
-<button class="luck-btn" (click)="startSlotMachine()" [disabled]="!isReady">Try your luck</button>>
+<button class="luck-btn" (click)="startSlotMachine()" [disabled]="!isReady">Опитай късмета си</button>
+<p class="message" *ngIf="wins() && isReady">
+    {{message}}
+</p>
+<p class="message" *ngIf="wins() && isReady && fixedPrizeIndex < prizeList.length">
+    Заложете текущата награда с повишен шанс да получите по-голяма плюс досегашните.
+</p>
+<div class="won-prize" *ngIf="wins() && isReady">
+    <img class="prize-img" src="{{firstColumnPrize.image}}" />
+</div>

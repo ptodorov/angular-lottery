@@ -1,8 +1,10 @@
 .prizes-container {
-    width: 800px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
     margin: auto;
     margin-top: 20px;
-    padding: 18px;
+    padding: 6px;
     border-color: #ca0909;
     border-style: solid;
     border-radius: 24px;
@@ -11,11 +13,6 @@
 .value-holder {
     display: inline-block;
     width: 33%;
-    font-size: 0;
-}
-
-.value-holder .value {
-    font-size: 16px;
 }
 
 .luck-btn {
@@ -38,5 +35,22 @@
 .prize-img {
     display: block;
     margin: auto;
-    width: 200px;
+    width: 125px;
+}
+
+.message {
+    margin: auto;
+    margin-top: 6px;
+    width: 100%;
+    max-width: 600px;
+    font-size: 24px;
+    text-align: center;
+    color: #1976D2;
+}
+
+.won-prize {
+    width: 300px;
+    margin: auto;
+    margin-top: 6px;
+    padding: 18px;
 }
