@@ -1,12 +1,12 @@
-<div>
-    <div>
-        <div class="value-holder">
-            <span class="value">{{firstSelectedValue}}</span>
-        </div><div class="value-holder">
-            <span class="value">{{secondSelectedValue}}</span>
-        </div><div class="value-holder">
-            <span class="value">{{thirdSelectedValue}}</span>
-        </div>
+<div class="prizes-container">
+    <div class="value-holder">
+        <img class="prize-img" src="{{firstColumnPrize.image}}" />
     </div>
-    <button class="luck-btn" (click)="startSlotMachine()">Try your luck</button>
+    <div class="value-holder">
+        <img class="prize-img" src="{{secondColumnPrize.image}}" />
+    </div>
+    <div class="value-holder">
+        <img class="prize-img" src="{{thirdColumnPrize.image}}" />
+    </div>
 </div>
+<button class="luck-btn" (click)="startSlotMachine()" [disabled]="!isReady">Try your luck</button>>
